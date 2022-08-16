@@ -1,9 +1,11 @@
+const canvasSize = 500; // Side length for canvas. Perfect square.
+
 /*
     This function controls the game setup phase.
     It is automatically run ONCE when the game starts.
 */
 function setup() {
-    createCanvas(600, 600);
+    createCanvas(canvasSize, canvasSize);
 }
 
 /*
@@ -13,9 +15,7 @@ function setup() {
 */
 function draw() {
     if (mouseIsPressed) {
-        fill(0);
-    } else {
-        fill(255);
+        let randomNum = Math.round(Math.random() * 40) + 40;
+        ellipse(mouseX, mouseY, randomNum, randomNum);
     }
-    ellipse(mouseX, mouseY, 80, 80);
 }
