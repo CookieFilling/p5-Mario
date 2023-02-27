@@ -5,7 +5,7 @@
     1. Create your external Javascript file. (`test.js`)
     2. Write your code inside of this file inside of one function.
        You may write helper functions, but you must export one main
-       function. (`export { main as testMain }`)
+       function. (`export { main as testMain }`)bn
     3. Write a comment at the top of the file so it's clear what it 
        does.
     4. Import the exported function here. Call it inside of the setup()
